@@ -1,0 +1,84 @@
+@use 'login-register';
+@use 'main';
+@use 'loader';
+
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.cdnfonts.com/css/rubik');
+@import url('https://fonts.cdnfonts.com/css/g-gelembung');
+
+:root {
+    --accent-color: rgb(254, 150, 92);
+    --accent-color-hover: rgba(254, 150, 92, 0.7);
+    --select-font-color: rgb(29, 29, 29);
+    --success: rgb(142, 201, 110);
+    --danger: rgb(238, 74, 88);
+    --dark: rgb(34, 38, 43);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+/* ========================= Generique class ========================= */
+
+.flex {
+    display: flex;
+}
+
+.email-already-use, 
+.account-created, 
+.account-created-redirect, 
+.account-disabled, 
+.account-login-error {
+    display: none;
+}
+
+.message-container {
+    justify-content: center;
+    padding: 0px 25px 20px;
+    width: 330px;
+    transition: all .3s;
+    .message {
+        font-weight: 500;
+        padding: 5px;
+        margin-top: 10px;
+        width: 100%;
+        text-align: left;
+        border-radius: 8px;
+        font-size: 15px;
+    
+        .fa-circle-check {
+            padding: 0px 5px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .fa-circle-exclamation {
+            padding: 0px 10px 0px 5px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .fa-message-exclamation {
+            padding: 0px 5px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        &.success {
+            background-color: var(--success);
+            color: rgba(0, 0, 0, 0.5);
+        }
+          
+        &.error {
+            background-color: var(--danger);
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    .second-message {
+        margin-top: 8px;
+    }
+}
+
+.hidden {
+    display: none;
+}

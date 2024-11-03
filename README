@@ -1,0 +1,19 @@
+Les controllers "FollowersController" et "FollowingCOntroller" on ete merge dans "FollowsController"
+Le clique sur following et followers du profil giud bien vers la page follows. 
+If click followers on profile then show followers on profile, vice versa
+
+Reste a styliser tout ca. Plus peut etre les tweets a finir si tu veux /temps
+et puis on devrait etre pas mal je pense
+
+
+
+// copy paste mon profilController et remplace le tiens avec le mien a moins que t'ait apporter des modif 
+// dans profil model j'ai ajouter une derniere function 
+// dans view profil modification au niveau du foreach la ou on affiche le contenu des tweets (dans tweet->MSG et dans tweet->message)
+
+// ajout ce que tu viens de modifier dans view profil dans les autres view cad home, trends, search;
+
+
+copy paste mon tweetAjax pour remplacer le tiens avec le mien
+
+

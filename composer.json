@@ -1,0 +1,19 @@
+{
+    "name": "mimir/w-web-090-par-1-1-academie-raoul.bajjani",
+    "autoload": {
+        "psr-4": {
+            "Router\\": "Router/",
+            "Exceptions\\": "Exceptions/",
+            "Controllers\\": "Controllers/",
+            "src\\": "src/",
+            "Models\\": "Models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Clément",
+            "email": "clement.bovin@epitech.eu"
+        }
+    ],
+    "require": {}
+}
